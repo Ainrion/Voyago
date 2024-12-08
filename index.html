@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyago - AI Travel Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .floating-icons img {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #4F46E5, #06B6D4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="border-b border-gray-800 bg-gray-900/50 backdrop-blur-lg fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold gradient-text">Voyago</div>
+                <div class="flex items-center space-x-8">
+                    <a href="#features" class="text-gray-400 hover:text-white transition-colors">Features</a>
+                    <a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors">
+                        Join Alpha
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-20 relative overflow-hidden">
+        <!-- Floating App Icons -->
+        <div class="absolute inset-0 pointer-events-none floating-icons opacity-20">
+            <img src="/api/placeholder/48/48" class="absolute top-20 left-20" style="animation-delay: 0s;">
+            <img src="/api/placeholder/48/48" class="absolute top-40 right-40" style="animation-delay: 1s;">
+            <img src="/api/placeholder/48/48" class="absolute bottom-40 left-1/3" style="animation-delay: 2s;">
+            <img src="/api/placeholder/48/48" class="absolute top-1/3 right-20" style="animation-delay: 3s;">
+        </div>
+
+        <div class="container mx-auto px-6 py-20 text-center relative z-10">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                Find your perfect 
+                <span class="gradient-text">travel companion.</span>
+            </h1>
+            <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
+                Connect all your travel needs with AI-powered assistance. Cultural insights, real-time translation, and personalized recommendations.
+            </p>
+            
+            <!-- Search Bar -->
+            <div class="max-w-2xl mx-auto mb-12">
+                <div class="bg-gray-800 p-2 rounded-lg flex items-center border border-gray-700">
+                    <input 
+                        type="text" 
+                        placeholder="Ask anything about your destination..."
+                        class="flex-1 bg-transparent px-4 py-2 focus:outline-none text-white placeholder-gray-500"
+                    >
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg transition-colors">
+                        Search
+                    </button>
+                </div>
+            </div>
+
+            <!-- Feature Icons -->
+            <div class="grid grid-cols-4 md:grid-cols-6 gap-4 max-w-3xl mx-auto">
+                <div class="p-4 bg-gray-800/50 rounded-lg border border-gray-700">
+                    <img src="/api/placeholder/32/32" alt="Feature" class="mx-auto">
+                </div>
+                <div class="p-4 bg-gray-800/50 rounded-lg border border-gray-700">
+                    <img src="/api/placeholder/32/32" alt="Feature" class="mx-auto">
+                </div>
+                <div class="p-4 bg-gray-800/50 rounded-lg border border-gray-700">
+                    <img src="/api/placeholder/32/32" alt="Feature" class="mx-auto">
+                </div>
+                <div class="p-4 bg-gray-800/50 rounded-lg border border-gray-700">
+                    <img src="/api/placeholder/32/32" alt="Feature" class="mx-auto">
+                </div>
+                <div class="p-4 bg-gray-800/50 rounded-lg border border-gray-700 hidden md:block">
+                    <img src="/api/placeholder/32/32" alt="Feature" class="mx-auto">
+                </div>
+                <div class="p-4 bg-gray-800/50 rounded-lg border border-gray-700 hidden md:block">
+                    <img src="/api/placeholder/32/32" alt="Feature" class="mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-gray-800/20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold mb-4">Have you ever needed a travel guide but couldn't find one?</h2>
+                    <p class="text-gray-400">Now you can have an AI-powered companion that understands local culture, translates languages, and helps you explore like a local.</p>
+                </div>
+
+                <div class="bg-gray-800 rounded-xl p-6 mb-12 border border-gray-700">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-blue-500/20 p-2 rounded-lg">
+                            <img src="/api/placeholder/24/24" alt="Demo" class="w-6 h-6">
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-2">Real-time Translation</h3>
+                            <p class="text-gray-400">Instantly translate signs, menus, and conversations in over 50 languages.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Don't just take our word for it</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <img src="/api/placeholder/40/40" alt="User" class="rounded-full w-10 h-10 mr-4">
+                        <div>
+                            <h4 class="font-semibold">Sarah Chen</h4>
+                            <p class="text-gray-400 text-sm">Travel Blogger</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"This app has completely transformed how I explore new cities. The cultural insights are incredibly valuable."</p>
+                </div>
+                <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <img src="/api/placeholder/40/40" alt="User" class="rounded-full w-10 h-10 mr-4">
+                        <div>
+                            <h4 class="font-semibold">Alex Rivera</h4>
+                            <p class="text-gray-400 text-sm">Digital Nomad</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"The real-time translation feature has saved me countless times. It's like having a local guide everywhere I go."</p>
+                </div>
+                <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <img src="/api/placeholder/40/40" alt="User" class="rounded-full w-10 h-10 mr-4">
+                        <div>
+                            <h4 class="font-semibold">Marie Dubois</h4>
+                            <p class="text-gray-400 text-sm">Business Traveler</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"Perfect for business trips. The app helps me understand local customs and etiquette instantly."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gray-800/20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">Ready to transform your travel experience?</h2>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg transition-colors">
+                Join the Alpha Program
+            </button>
+            <p class="text-gray-400 mt-4">Limited spots available. Apply now to secure early access.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800">
+        <div class="container mx-auto px-6 py-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="text-2xl font-bold gradient-text mb-4">Voyago</div>
+                    <p class="text-gray-400">AI-powered travel assistance</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Product</h4>
+                        <ul class="space-y-2 text-gray-400">
+                            <li><a href="#" class="hover:text-white">Features</a></li>
+                            <li><a href="#" class="hover:text-white">Alpha Program</a></li>
+                            <li><a href="#" class="hover:text-white">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Company</h4>
+                        <ul class="space-y-2 text-gray-400">
+                            <li><a href="#" class="hover:text-white">About</a></li>
+                            <li><a href="#" class="hover:text-white">Blog</a></li>
+                            <li><a href="#" class="hover:text-white">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                        <ul class="space-y-2 text-gray-400">
+                            <li><a href="#" class="hover:text-white">Privacy</a></li>
+                            <li><a href="#" class="hover:text-white">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Voyago. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
